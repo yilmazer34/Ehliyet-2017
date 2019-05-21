@@ -8,7 +8,7 @@
 
 import Foundation
 
-class taMayis19Bank {
+class taMart19Bank {
     
     var list = [Questionn]()
     

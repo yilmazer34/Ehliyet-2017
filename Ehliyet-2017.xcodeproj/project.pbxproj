@@ -3,17 +3,120 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015656B51F9AC5D1002606F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015656B41F9AC5D1002606F3 /* AppDelegate.swift */; };
-		015656B71F9AC5D1002606F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015656B61F9AC5D1002606F3 /* ViewController.swift */; };
 		015656BA1F9AC5D1002606F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015656B81F9AC5D1002606F3 /* Main.storyboard */; };
 		015656BC1F9AC5D1002606F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015656BB1F9AC5D1002606F3 /* Assets.xcassets */; };
 		015656BF1F9AC5D1002606F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015656BD1F9AC5D1002606F3 /* LaunchScreen.storyboard */; };
 		015656CA1F9AC5D1002606F3 /* Ehliyet_2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015656C91F9AC5D1002606F3 /* Ehliyet_2017Tests.swift */; };
 		015656D51F9AC5D1002606F3 /* Ehliyet_2017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015656D41F9AC5D1002606F3 /* Ehliyet_2017UITests.swift */; };
+		159466EFBDA5CBED3E7479C3 /* Pods_Ehliyet_2017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AA4EC8686B89A2566727CA /* Pods_Ehliyet_2017Tests.framework */; };
+		88067ACA2275AEBF00A81653 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88067AC92275AEBF00A81653 /* GoogleService-Info.plist */; };
+		8807136C2229950300E73529 /* Subat19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807136B2229950300E73529 /* Subat19Quiz.swift */; };
+		8807136E2229955300E73529 /* Subat19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807136D2229955300E73529 /* Subat19Bank.swift */; };
+		8807137022299C5B00E73529 /* taSubat19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807136F22299C5B00E73529 /* taSubat19Quiz.swift */; };
+		8807137222299C8900E73529 /* taSubat19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807137122299C8900E73529 /* taSubat19Bank.swift */; };
+		880713742229A20400E73529 /* tSubat19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880713732229A20400E73529 /* tSubat19Quiz.swift */; };
+		880713762229A23C00E73529 /* tSubat19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880713752229A23C00E73529 /* tSubat19Bank.swift */; };
+		880713782229AC9F00E73529 /* mSubat19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880713772229AC9F00E73529 /* mSubat19Bank.swift */; };
+		8807137A2229ACFE00E73529 /* mSubat19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880713792229ACFE00E73529 /* mSubat19Quiz.swift */; };
+		8807137C2229B08400E73529 /* iSubat19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807137B2229B08400E73529 /* iSubat19Bank.swift */; };
+		8807137E2229B0E200E73529 /* iSubat19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807137D2229B0E200E73529 /* iSubat19Quiz.swift */; };
+		880DB51D209243140089C315 /* taNisan18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DB51C209243140089C315 /* taNisan18Bank.swift */; };
+		880DB51F209244050089C315 /* tNisan18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DB51E209244050089C315 /* tNisan18Bank.swift */; };
+		880DB5212092446C0089C315 /* mNisan18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DB5202092446C0089C315 /* mNisan18Bank.swift */; };
+		880DB523209244B70089C315 /* iNisan18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DB522209244B70089C315 /* iNisan18Bank.swift */; };
+		880DB525209246060089C315 /* taNisan18Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DB524209246060089C315 /* taNisan18Quiz.swift */; };
+		880DB52720924A330089C315 /* tNisan18Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DB52620924A330089C315 /* tNisan18Quiz.swift */; };
+		880DB52920924CCF0089C315 /* mNisan18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DB52820924CCF0089C315 /* mNisan18.swift */; };
+		880DB52B20924F3F0089C315 /* iNisan18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DB52A20924F3F0089C315 /* iNisan18.swift */; };
+		881256A621EF6DED00B4AB9F /* sinav2019.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881256A521EF6DEC00B4AB9F /* sinav2019.storyboard */; };
+		881256A921EF761900B4AB9F /* Ocak19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881256A821EF761900B4AB9F /* Ocak19Quiz.swift */; };
+		881256AB21EF774A00B4AB9F /* Ocak19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881256AA21EF774A00B4AB9F /* Ocak19Bank.swift */; };
+		881256AD21EF77E800B4AB9F /* Ocak19Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881256AC21EF77E800B4AB9F /* Ocak19Cell.swift */; };
+		881256AF21EF786B00B4AB9F /* List2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881256AE21EF786B00B4AB9F /* List2019.swift */; };
+		88281C4020819EFC00EDB24B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88281C3F20819EFB00EDB24B /* CoreData.framework */; };
+		88281C4420819F3500EDB24B /* dataCore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88281C4220819F3500EDB24B /* dataCore.xcdatamodeld */; };
+		88281C472081A01F00EDB24B /* Sonuclar+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C452081A01F00EDB24B /* Sonuclar+CoreDataClass.swift */; };
+		88281C482081A01F00EDB24B /* Sonuclar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C462081A01F00EDB24B /* Sonuclar+CoreDataProperties.swift */; };
+		88281C4A2081A04800EDB24B /* resultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C492081A04800EDB24B /* resultService.swift */; };
+		88281C7C2081A2D600EDB24B /* taSubat18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C6D2081A2CE00EDB24B /* taSubat18Bank.swift */; };
+		88281C7D2081A2D600EDB24B /* trafikAdabi17Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C6E2081A2CF00EDB24B /* trafikAdabi17Cell.swift */; };
+		88281C7F2081A2D600EDB24B /* taSubat18Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C702081A2D100EDB24B /* taSubat18Quiz.swift */; };
+		88281C832081A2D600EDB24B /* Questionn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C742081A2D500EDB24B /* Questionn.swift */; };
+		88281C972081A47000EDB24B /* tSubat18Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C892081A46600EDB24B /* tSubat18Quiz.swift */; };
+		88281C982081A47000EDB24B /* trafik17Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C8A2081A46700EDB24B /* trafik17Cell.swift */; };
+		88281C9F2081A47000EDB24B /* tSubat18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281C912081A46F00EDB24B /* tSubat18Bank.swift */; };
+		88281CF82081A7D300EDB24B /* mSubat18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281CEA2081A7D000EDB24B /* mSubat18.swift */; };
+		88281CFA2081A7D300EDB24B /* mSubat18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281CEC2081A7D200EDB24B /* mSubat18Bank.swift */; };
+		88281D102081A8A200EDB24B /* iSubat18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281D022081A89C00EDB24B /* iSubat18Bank.swift */; };
+		88281D152081A8A200EDB24B /* iSubat18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281D072081A89F00EDB24B /* iSubat18.swift */; };
+		88281D182081A8A200EDB24B /* ilkyardim17Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281D0A2081A8A200EDB24B /* ilkyardim17Cell.swift */; };
+		88281D1C2081A96000EDB24B /* sonuclarimList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281D1B2081A95F00EDB24B /* sonuclarimList.swift */; };
+		88281D1E2081AA4D00EDB24B /* SonuclarimListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281D1D2081AA4D00EDB24B /* SonuclarimListCell.swift */; };
+		88281D202081ABF100EDB24B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88281D1F2081ABF100EDB24B /* HomePage.swift */; };
+		88372C69224D6A5200F4E482 /* Mart19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372C68224D6A5200F4E482 /* Mart19Bank.swift */; };
+		88372C6B224D6C0600F4E482 /* Mart19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372C6A224D6C0600F4E482 /* Mart19Quiz.swift */; };
+		88372C6D224D7D0D00F4E482 /* motor17Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372C6C224D7D0D00F4E482 /* motor17Cell.swift */; };
+		88372C6F224D884800F4E482 /* taMart19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372C6E224D884800F4E482 /* taMart19Bank.swift */; };
+		88372C71224D88C500F4E482 /* taMart19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88372C70224D88C500F4E482 /* taMart19Quiz.swift */; };
+		883777B82081934F00828320 /* CirclePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883777B72081934E00828320 /* CirclePath.swift */; };
+		884E8E072121900800CD6265 /* tAgustos18Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E8E052121900700CD6265 /* tAgustos18Quiz.swift */; };
+		884E8E082121900800CD6265 /* tAgustos18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E8E062121900800CD6265 /* tAgustos18Bank.swift */; };
+		884E8E0A212190AC00CD6265 /* trafik17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E8E09212190AC00CD6265 /* trafik17.swift */; };
+		884E8E0D2121916B00CD6265 /* taAgustos18Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E8E0B2121916A00CD6265 /* taAgustos18Quiz.swift */; };
+		884E8E0E2121916B00CD6265 /* taAgustos18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E8E0C2121916B00CD6265 /* taAgustos18Bank.swift */; };
+		884E8E102121918400CD6265 /* trafikAdabi17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E8E0F2121918300CD6265 /* trafikAdabi17.swift */; };
+		88583D4D21209D3D00AAF6C4 /* iAgustos18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88583D4B21209D3C00AAF6C4 /* iAgustos18.swift */; };
+		88583D4E21209D3D00AAF6C4 /* iAgustos18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88583D4C21209D3D00AAF6C4 /* iAgustos18Bank.swift */; };
+		885FC67A2274F06B00F57F2F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885FC6792274F06B00F57F2F /* StoreKit.framework */; };
+		886AE46B21209FA600F164A3 /* ilkyardim17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AE46A21209FA600F164A3 /* ilkyardim17.swift */; };
+		886AE46D2120A4A700F164A3 /* motor17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AE46C2120A4A700F164A3 /* motor17.swift */; };
+		886AE4702120A4B000F164A3 /* mAgustos18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AE46E2120A4AF00F164A3 /* mAgustos18.swift */; };
+		886AE4712120A4B000F164A3 /* mAgustos18Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AE46F2120A4B000F164A3 /* mAgustos18Bank.swift */; };
+		88904084206E636000034A21 /* iletisim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88904083206E636000034A21 /* iletisim.swift */; };
+		88B72956224D992400362A54 /* tMarch19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B72955224D992400362A54 /* tMarch19Bank.swift */; };
+		88B72958224D99B100362A54 /* tMarch19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B72957224D99B100362A54 /* tMarch19Quiz.swift */; };
+		88B7295A224D9EBF00362A54 /* mMarch19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B72959224D9EBF00362A54 /* mMarch19Bank.swift */; };
+		88B7295C224D9F3A00362A54 /* mMarch19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7295B224D9F3A00362A54 /* mMarch19Quiz.swift */; };
+		88B7295E224DA29100362A54 /* iMarch19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7295D224DA29100362A54 /* iMarch19Bank.swift */; };
+		88B72960224DA32800362A54 /* iMarch19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7295F224DA32800362A54 /* iMarch19Quiz.swift */; };
+		88B81BF12293E63B00DD7426 /* TrafikAdabiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B81BF02293E63B00DD7426 /* TrafikAdabiVC.swift */; };
+		88BA5AA021FCC8FA0079712C /* taOcak19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA5A9F21FCC8FA0079712C /* taOcak19Quiz.swift */; };
+		88BA5AA221FCC92A0079712C /* taOcak19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA5AA121FCC92A0079712C /* taOcak19Bank.swift */; };
+		88BA5AA421FCE9850079712C /* tOcak19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA5AA321FCE9850079712C /* tOcak19Bank.swift */; };
+		88BA5AA621FCE9D80079712C /* tOcak19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA5AA521FCE9D80079712C /* tOcak19Quiz.swift */; };
+		88BB83F821FCF2AC0083A6A5 /* mOcak19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB83F721FCF2AC0083A6A5 /* mOcak19Bank.swift */; };
+		88BB83FA21FCF32B0083A6A5 /* mOcak19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB83F921FCF32B0083A6A5 /* mOcak19Quiz.swift */; };
+		88BB83FC21FCF65A0083A6A5 /* iOcak19Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB83FB21FCF65A0083A6A5 /* iOcak19Bank.swift */; };
+		88BB83FE21FCF6B20083A6A5 /* iOcak19Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB83FD21FCF6B20083A6A5 /* iOcak19Quiz.swift */; };
+		88C15B23205F382300CBD233 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15B21205F382100CBD233 /* RoundButton.swift */; };
+		88C15B24205F382300CBD233 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15B22205F382300CBD233 /* CardView.swift */; };
+		88C15B4A205F38D000CBD233 /* ilkyardim17.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C15B49205F38D000CBD233 /* ilkyardim17.storyboard */; };
+		88C15B70205F391F00CBD233 /* motor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C15B6F205F391F00CBD233 /* motor.storyboard */; };
+		88C15BC6205F397A00CBD233 /* trafik17.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C15BC5205F397A00CBD233 /* trafik17.storyboard */; };
+		88C15BD9205F399F00CBD233 /* trafikAdabi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C15BD8205F399E00CBD233 /* trafikAdabi.storyboard */; };
+		88C15BE3205F39C700CBD233 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15BDA205F39BE00CBD233 /* CollectionViewCell.swift */; };
+		88C15BE5205F39C700CBD233 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15BDC205F39C100CBD233 /* PageViewController.swift */; };
+		88C15BE6205F39C700CBD233 /* KullanmaTalimati.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15BDD205F39C200CBD233 /* KullanmaTalimati.swift */; };
+		88C15BE8205F39C700CBD233 /* SinavaKalanSure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15BDF205F39C400CBD233 /* SinavaKalanSure.swift */; };
+		88C15BE9205F39C700CBD233 /* sinavyilsecimi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15BE0205F39C500CBD233 /* sinavyilsecimi.swift */; };
+		88C15BEA205F39C700CBD233 /* SinavHakkinda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15BE1205F39C600CBD233 /* SinavHakkinda.swift */; };
+		88C15BF0205F3C1700CBD233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C15BEF205F3C1700CBD233 /* AppDelegate.swift */; };
+		88D1B0AF218DE5B70069598E /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D1B0AE218DE5B70069598E /* info.swift */; };
+		88EF0D5D2120B15A0023B9A7 /* EgitimVideolari.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EF0D5C2120B15A0023B9A7 /* EgitimVideolari.storyboard */; };
+		88EF0D662120B17E0023B9A7 /* EgitimVideolariCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF0D5E2120B16D0023B9A7 /* EgitimVideolariCell.swift */; };
+		88EF0D672120B17E0023B9A7 /* DireksiyonEgitimi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF0D5F2120B16F0023B9A7 /* DireksiyonEgitimi.swift */; };
+		88EF0D682120B17E0023B9A7 /* EgitimVideolari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF0D602120B1700023B9A7 /* EgitimVideolari.swift */; };
+		88EF0D692120B17E0023B9A7 /* TrafikveCevre1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF0D612120B1730023B9A7 /* TrafikveCevre1.swift */; };
+		88EF0D6A2120B17E0023B9A7 /* Motor1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF0D622120B1740023B9A7 /* Motor1.swift */; };
+		88EF0D6B2120B17E0023B9A7 /* Motor2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF0D632120B1760023B9A7 /* Motor2.swift */; };
+		88EF0D6C2120B17E0023B9A7 /* ilkyardimev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF0D642120B17D0023B9A7 /* ilkyardimev.swift */; };
+		88EF0D6D2120B17E0023B9A7 /* TrafikveCevre2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF0D652120B17E0023B9A7 /* TrafikveCevre2.swift */; };
+		AA1E178A04E1D5A942B61F17 /* Pods_Ehliyet_2017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A735BEAA25526F05B5910A0 /* Pods_Ehliyet_2017UITests.framework */; };
+		BB6AA75A85AA47E0CE5F9E47 /* Pods_Ehliyet_2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D4DA952B81E7480E85F1D /* Pods_Ehliyet_2017.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +138,6 @@
 
 /* Begin PBXFileReference section */
 		015656B11F9AC5D1002606F3 /* Ehliyet-2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ehliyet-2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		015656B41F9AC5D1002606F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		015656B61F9AC5D1002606F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		015656B91F9AC5D1002606F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		015656BB1F9AC5D1002606F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		015656BE1F9AC5D1002606F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +148,119 @@
 		015656D01F9AC5D1002606F3 /* Ehliyet-2017UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ehliyet-2017UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		015656D41F9AC5D1002606F3 /* Ehliyet_2017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ehliyet_2017UITests.swift; sourceTree = "<group>"; };
 		015656D61F9AC5D1002606F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AA4EC8686B89A2566727CA /* Pods_Ehliyet_2017Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ehliyet_2017Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FBDFAF0B2F5B6C336EE0F2 /* Pods-Ehliyet-2017UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ehliyet-2017UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ehliyet-2017UITests/Pods-Ehliyet-2017UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		65D632485592A5230D8F939C /* Pods-Ehliyet-2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ehliyet-2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ehliyet-2017Tests/Pods-Ehliyet-2017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7088AE539A194BEDA0AF7430 /* Pods-Ehliyet-2017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ehliyet-2017UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ehliyet-2017UITests/Pods-Ehliyet-2017UITests.release.xcconfig"; sourceTree = "<group>"; };
+		75989F384FCC22A6A5C45DBB /* Pods-Ehliyet-2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ehliyet-2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ehliyet-2017/Pods-Ehliyet-2017.debug.xcconfig"; sourceTree = "<group>"; };
+		7A735BEAA25526F05B5910A0 /* Pods_Ehliyet_2017UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ehliyet_2017UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88067AC92275AEBF00A81653 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8807136B2229950300E73529 /* Subat19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subat19Quiz.swift; sourceTree = "<group>"; };
+		8807136D2229955300E73529 /* Subat19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subat19Bank.swift; sourceTree = "<group>"; };
+		8807136F22299C5B00E73529 /* taSubat19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taSubat19Quiz.swift; sourceTree = "<group>"; };
+		8807137122299C8900E73529 /* taSubat19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taSubat19Bank.swift; sourceTree = "<group>"; };
+		880713732229A20400E73529 /* tSubat19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tSubat19Quiz.swift; sourceTree = "<group>"; };
+		880713752229A23C00E73529 /* tSubat19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tSubat19Bank.swift; sourceTree = "<group>"; };
+		880713772229AC9F00E73529 /* mSubat19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mSubat19Bank.swift; sourceTree = "<group>"; };
+		880713792229ACFE00E73529 /* mSubat19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mSubat19Quiz.swift; sourceTree = "<group>"; };
+		8807137B2229B08400E73529 /* iSubat19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSubat19Bank.swift; sourceTree = "<group>"; };
+		8807137D2229B0E200E73529 /* iSubat19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSubat19Quiz.swift; sourceTree = "<group>"; };
+		880DB51C209243140089C315 /* taNisan18Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taNisan18Bank.swift; sourceTree = "<group>"; };
+		880DB51E209244050089C315 /* tNisan18Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tNisan18Bank.swift; sourceTree = "<group>"; };
+		880DB5202092446C0089C315 /* mNisan18Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mNisan18Bank.swift; sourceTree = "<group>"; };
+		880DB522209244B70089C315 /* iNisan18Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNisan18Bank.swift; sourceTree = "<group>"; };
+		880DB524209246060089C315 /* taNisan18Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taNisan18Quiz.swift; sourceTree = "<group>"; };
+		880DB52620924A330089C315 /* tNisan18Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tNisan18Quiz.swift; sourceTree = "<group>"; };
+		880DB52820924CCF0089C315 /* mNisan18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mNisan18.swift; sourceTree = "<group>"; };
+		880DB52A20924F3F0089C315 /* iNisan18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNisan18.swift; sourceTree = "<group>"; };
+		881256A521EF6DEC00B4AB9F /* sinav2019.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = sinav2019.storyboard; sourceTree = "<group>"; };
+		881256A821EF761900B4AB9F /* Ocak19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocak19Quiz.swift; sourceTree = "<group>"; };
+		881256AA21EF774A00B4AB9F /* Ocak19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocak19Bank.swift; sourceTree = "<group>"; };
+		881256AC21EF77E800B4AB9F /* Ocak19Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocak19Cell.swift; sourceTree = "<group>"; };
+		881256AE21EF786B00B4AB9F /* List2019.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List2019.swift; sourceTree = "<group>"; };
+		88281C3F20819EFB00EDB24B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		88281C4320819F3500EDB24B /* dataCore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataCore.xcdatamodel; sourceTree = "<group>"; };
+		88281C452081A01F00EDB24B /* Sonuclar+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sonuclar+CoreDataClass.swift"; sourceTree = "<group>"; };
+		88281C462081A01F00EDB24B /* Sonuclar+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sonuclar+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		88281C492081A04800EDB24B /* resultService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultService.swift; sourceTree = "<group>"; };
+		88281C6D2081A2CE00EDB24B /* taSubat18Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taSubat18Bank.swift; sourceTree = "<group>"; };
+		88281C6E2081A2CF00EDB24B /* trafikAdabi17Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trafikAdabi17Cell.swift; sourceTree = "<group>"; };
+		88281C702081A2D100EDB24B /* taSubat18Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taSubat18Quiz.swift; sourceTree = "<group>"; };
+		88281C742081A2D500EDB24B /* Questionn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questionn.swift; sourceTree = "<group>"; };
+		88281C892081A46600EDB24B /* tSubat18Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tSubat18Quiz.swift; sourceTree = "<group>"; };
+		88281C8A2081A46700EDB24B /* trafik17Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trafik17Cell.swift; sourceTree = "<group>"; };
+		88281C912081A46F00EDB24B /* tSubat18Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tSubat18Bank.swift; sourceTree = "<group>"; };
+		88281CEA2081A7D000EDB24B /* mSubat18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mSubat18.swift; sourceTree = "<group>"; };
+		88281CEC2081A7D200EDB24B /* mSubat18Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mSubat18Bank.swift; sourceTree = "<group>"; };
+		88281D022081A89C00EDB24B /* iSubat18Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iSubat18Bank.swift; sourceTree = "<group>"; };
+		88281D072081A89F00EDB24B /* iSubat18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iSubat18.swift; sourceTree = "<group>"; };
+		88281D0A2081A8A200EDB24B /* ilkyardim17Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ilkyardim17Cell.swift; sourceTree = "<group>"; };
+		88281D1B2081A95F00EDB24B /* sonuclarimList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sonuclarimList.swift; sourceTree = "<group>"; };
+		88281D1D2081AA4D00EDB24B /* SonuclarimListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonuclarimListCell.swift; sourceTree = "<group>"; };
+		88281D1F2081ABF100EDB24B /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		88372C68224D6A5200F4E482 /* Mart19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mart19Bank.swift; sourceTree = "<group>"; };
+		88372C6A224D6C0600F4E482 /* Mart19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mart19Quiz.swift; sourceTree = "<group>"; };
+		88372C6C224D7D0D00F4E482 /* motor17Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = motor17Cell.swift; sourceTree = "<group>"; };
+		88372C6E224D884800F4E482 /* taMart19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taMart19Bank.swift; sourceTree = "<group>"; };
+		88372C70224D88C500F4E482 /* taMart19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taMart19Quiz.swift; sourceTree = "<group>"; };
+		883777B72081934E00828320 /* CirclePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePath.swift; sourceTree = "<group>"; };
+		884E8E052121900700CD6265 /* tAgustos18Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tAgustos18Quiz.swift; sourceTree = "<group>"; };
+		884E8E062121900800CD6265 /* tAgustos18Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tAgustos18Bank.swift; sourceTree = "<group>"; };
+		884E8E09212190AC00CD6265 /* trafik17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trafik17.swift; sourceTree = "<group>"; };
+		884E8E0B2121916A00CD6265 /* taAgustos18Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taAgustos18Quiz.swift; sourceTree = "<group>"; };
+		884E8E0C2121916B00CD6265 /* taAgustos18Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taAgustos18Bank.swift; sourceTree = "<group>"; };
+		884E8E0F2121918300CD6265 /* trafikAdabi17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trafikAdabi17.swift; sourceTree = "<group>"; };
+		88583D4B21209D3C00AAF6C4 /* iAgustos18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iAgustos18.swift; sourceTree = "<group>"; };
+		88583D4C21209D3D00AAF6C4 /* iAgustos18Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iAgustos18Bank.swift; sourceTree = "<group>"; };
+		885FC6792274F06B00F57F2F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		886AE46A21209FA600F164A3 /* ilkyardim17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ilkyardim17.swift; sourceTree = "<group>"; };
+		886AE46C2120A4A700F164A3 /* motor17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = motor17.swift; sourceTree = "<group>"; };
+		886AE46E2120A4AF00F164A3 /* mAgustos18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mAgustos18.swift; sourceTree = "<group>"; };
+		886AE46F2120A4B000F164A3 /* mAgustos18Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mAgustos18Bank.swift; sourceTree = "<group>"; };
+		88904083206E636000034A21 /* iletisim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iletisim.swift; sourceTree = "<group>"; };
+		88B72955224D992400362A54 /* tMarch19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tMarch19Bank.swift; sourceTree = "<group>"; };
+		88B72957224D99B100362A54 /* tMarch19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tMarch19Quiz.swift; sourceTree = "<group>"; };
+		88B72959224D9EBF00362A54 /* mMarch19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mMarch19Bank.swift; sourceTree = "<group>"; };
+		88B7295B224D9F3A00362A54 /* mMarch19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mMarch19Quiz.swift; sourceTree = "<group>"; };
+		88B7295D224DA29100362A54 /* iMarch19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMarch19Bank.swift; sourceTree = "<group>"; };
+		88B7295F224DA32800362A54 /* iMarch19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMarch19Quiz.swift; sourceTree = "<group>"; };
+		88B81BF02293E63B00DD7426 /* TrafikAdabiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafikAdabiVC.swift; sourceTree = "<group>"; };
+		88BA5A9F21FCC8FA0079712C /* taOcak19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taOcak19Quiz.swift; sourceTree = "<group>"; };
+		88BA5AA121FCC92A0079712C /* taOcak19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taOcak19Bank.swift; sourceTree = "<group>"; };
+		88BA5AA321FCE9850079712C /* tOcak19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tOcak19Bank.swift; sourceTree = "<group>"; };
+		88BA5AA521FCE9D80079712C /* tOcak19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tOcak19Quiz.swift; sourceTree = "<group>"; };
+		88BB83F721FCF2AC0083A6A5 /* mOcak19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mOcak19Bank.swift; sourceTree = "<group>"; };
+		88BB83F921FCF32B0083A6A5 /* mOcak19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mOcak19Quiz.swift; sourceTree = "<group>"; };
+		88BB83FB21FCF65A0083A6A5 /* iOcak19Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOcak19Bank.swift; sourceTree = "<group>"; };
+		88BB83FD21FCF6B20083A6A5 /* iOcak19Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOcak19Quiz.swift; sourceTree = "<group>"; };
+		88C15B21205F382100CBD233 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		88C15B22205F382300CBD233 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		88C15B49205F38D000CBD233 /* ilkyardim17.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ilkyardim17.storyboard; sourceTree = "<group>"; };
+		88C15B6F205F391F00CBD233 /* motor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = motor.storyboard; sourceTree = "<group>"; };
+		88C15BC5205F397A00CBD233 /* trafik17.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = trafik17.storyboard; sourceTree = "<group>"; };
+		88C15BD8205F399E00CBD233 /* trafikAdabi.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = trafikAdabi.storyboard; sourceTree = "<group>"; };
+		88C15BDA205F39BE00CBD233 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		88C15BDC205F39C100CBD233 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		88C15BDD205F39C200CBD233 /* KullanmaTalimati.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KullanmaTalimati.swift; sourceTree = "<group>"; };
+		88C15BDF205F39C400CBD233 /* SinavaKalanSure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinavaKalanSure.swift; sourceTree = "<group>"; };
+		88C15BE0205F39C500CBD233 /* sinavyilsecimi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sinavyilsecimi.swift; sourceTree = "<group>"; };
+		88C15BE1205F39C600CBD233 /* SinavHakkinda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinavHakkinda.swift; sourceTree = "<group>"; };
+		88C15BEC205F3B0200CBD233 /* Ehliyet-2017.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ehliyet-2017.entitlements"; sourceTree = "<group>"; };
+		88C15BEF205F3C1700CBD233 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88D1B0AE218DE5B70069598E /* info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = info.swift; sourceTree = "<group>"; };
+		88EF0D5C2120B15A0023B9A7 /* EgitimVideolari.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EgitimVideolari.storyboard; sourceTree = "<group>"; };
+		88EF0D5E2120B16D0023B9A7 /* EgitimVideolariCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EgitimVideolariCell.swift; sourceTree = "<group>"; };
+		88EF0D5F2120B16F0023B9A7 /* DireksiyonEgitimi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DireksiyonEgitimi.swift; sourceTree = "<group>"; };
+		88EF0D602120B1700023B9A7 /* EgitimVideolari.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EgitimVideolari.swift; sourceTree = "<group>"; };
+		88EF0D612120B1730023B9A7 /* TrafikveCevre1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafikveCevre1.swift; sourceTree = "<group>"; };
+		88EF0D622120B1740023B9A7 /* Motor1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motor1.swift; sourceTree = "<group>"; };
+		88EF0D632120B1760023B9A7 /* Motor2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motor2.swift; sourceTree = "<group>"; };
+		88EF0D642120B17D0023B9A7 /* ilkyardimev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ilkyardimev.swift; sourceTree = "<group>"; };
+		88EF0D652120B17E0023B9A7 /* TrafikveCevre2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafikveCevre2.swift; sourceTree = "<group>"; };
+		88EF0D6E2120B70B0023B9A7 /* Ehliyet-2017-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ehliyet-2017-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB9D4DA952B81E7480E85F1D /* Pods_Ehliyet_2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ehliyet_2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6EB5A5E6B0ABD9724B7D060 /* Pods-Ehliyet-2017Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ehliyet-2017Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ehliyet-2017Tests/Pods-Ehliyet-2017Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6F75F4328126274515957A /* Pods-Ehliyet-2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ehliyet-2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ehliyet-2017/Pods-Ehliyet-2017.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +268,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885FC67A2274F06B00F57F2F /* StoreKit.framework in Frameworks */,
+				88281C4020819EFC00EDB24B /* CoreData.framework in Frameworks */,
+				BB6AA75A85AA47E0CE5F9E47 /* Pods_Ehliyet_2017.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159466EFBDA5CBED3E7479C3 /* Pods_Ehliyet_2017Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +286,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1E178A04E1D5A942B61F17 /* Pods_Ehliyet_2017UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +300,8 @@
 				015656C81F9AC5D1002606F3 /* Ehliyet-2017Tests */,
 				015656D31F9AC5D1002606F3 /* Ehliyet-2017UITests */,
 				015656B21F9AC5D1002606F3 /* Products */,
+				69F54849592C8DADEB1C5688 /* Pods */,
+				A04C17EF506DABB5CD66C60E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +318,35 @@
 		015656B31F9AC5D1002606F3 /* Ehliyet-2017 */ = {
 			isa = PBXGroup;
 			children = (
-				015656B41F9AC5D1002606F3 /* AppDelegate.swift */,
-				015656B61F9AC5D1002606F3 /* ViewController.swift */,
+				881256A721EF75AB00B4AB9F /* Sinav2019 */,
+				88C15BDF205F39C400CBD233 /* SinavaKalanSure.swift */,
 				015656B81F9AC5D1002606F3 /* Main.storyboard */,
+				88281D1F2081ABF100EDB24B /* HomePage.swift */,
+				88281D1B2081A95F00EDB24B /* sonuclarimList.swift */,
+				88281D1D2081AA4D00EDB24B /* SonuclarimListCell.swift */,
+				88281C4120819F0900EDB24B /* CoreData */,
+				88C15BEF205F3C1700CBD233 /* AppDelegate.swift */,
+				88C15BEC205F3B0200CBD233 /* Ehliyet-2017.entitlements */,
+				88C15BDA205F39BE00CBD233 /* CollectionViewCell.swift */,
+				883777B72081934E00828320 /* CirclePath.swift */,
+				88C15BDD205F39C200CBD233 /* KullanmaTalimati.swift */,
+				88C15BDC205F39C100CBD233 /* PageViewController.swift */,
+				88C15BE1205F39C600CBD233 /* SinavHakkinda.swift */,
+				88C15BE0205F39C500CBD233 /* sinavyilsecimi.swift */,
+				88C15BC7205F397E00CBD233 /* TrafikAdabi */,
+				88C15BB4205F396300CBD233 /* trafik */,
+				88C15B5E205F38FB00CBD233 /* Motor */,
+				88C15B38205F38B000CBD233 /* ilkYardim */,
+				88C15B25205F386A00CBD233 /* EgitimVideolari */,
+				88C15B22205F382300CBD233 /* CardView.swift */,
+				88C15B21205F382100CBD233 /* RoundButton.swift */,
 				015656BB1F9AC5D1002606F3 /* Assets.xcassets */,
 				015656BD1F9AC5D1002606F3 /* LaunchScreen.storyboard */,
 				015656C01F9AC5D1002606F3 /* Info.plist */,
+				88067AC92275AEBF00A81653 /* GoogleService-Info.plist */,
+				88904083206E636000034A21 /* iletisim.swift */,
+				88D1B0AE218DE5B70069598E /* info.swift */,
+				88EF0D6E2120B70B0023B9A7 /* Ehliyet-2017-Bridging-Header.h */,
 			);
 			path = "Ehliyet-2017";
 			sourceTree = "<group>";
@@ -125,6 +369,164 @@
 			path = "Ehliyet-2017UITests";
 			sourceTree = "<group>";
 		};
+		69F54849592C8DADEB1C5688 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75989F384FCC22A6A5C45DBB /* Pods-Ehliyet-2017.debug.xcconfig */,
+				EB6F75F4328126274515957A /* Pods-Ehliyet-2017.release.xcconfig */,
+				E6EB5A5E6B0ABD9724B7D060 /* Pods-Ehliyet-2017Tests.debug.xcconfig */,
+				65D632485592A5230D8F939C /* Pods-Ehliyet-2017Tests.release.xcconfig */,
+				55FBDFAF0B2F5B6C336EE0F2 /* Pods-Ehliyet-2017UITests.debug.xcconfig */,
+				7088AE539A194BEDA0AF7430 /* Pods-Ehliyet-2017UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		881256A721EF75AB00B4AB9F /* Sinav2019 */ = {
+			isa = PBXGroup;
+			children = (
+				881256A521EF6DEC00B4AB9F /* sinav2019.storyboard */,
+				8807136B2229950300E73529 /* Subat19Quiz.swift */,
+				8807136D2229955300E73529 /* Subat19Bank.swift */,
+				881256A821EF761900B4AB9F /* Ocak19Quiz.swift */,
+				881256AA21EF774A00B4AB9F /* Ocak19Bank.swift */,
+				881256AC21EF77E800B4AB9F /* Ocak19Cell.swift */,
+				881256AE21EF786B00B4AB9F /* List2019.swift */,
+				88372C68224D6A5200F4E482 /* Mart19Bank.swift */,
+				88372C6A224D6C0600F4E482 /* Mart19Quiz.swift */,
+			);
+			path = Sinav2019;
+			sourceTree = "<group>";
+		};
+		88281C4120819F0900EDB24B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				88281C492081A04800EDB24B /* resultService.swift */,
+				88281C452081A01F00EDB24B /* Sonuclar+CoreDataClass.swift */,
+				88281C462081A01F00EDB24B /* Sonuclar+CoreDataProperties.swift */,
+				88281C4220819F3500EDB24B /* dataCore.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		88C15B25205F386A00CBD233 /* EgitimVideolari */ = {
+			isa = PBXGroup;
+			children = (
+				88EF0D5F2120B16F0023B9A7 /* DireksiyonEgitimi.swift */,
+				88EF0D602120B1700023B9A7 /* EgitimVideolari.swift */,
+				88EF0D5E2120B16D0023B9A7 /* EgitimVideolariCell.swift */,
+				88EF0D642120B17D0023B9A7 /* ilkyardimev.swift */,
+				88EF0D622120B1740023B9A7 /* Motor1.swift */,
+				88EF0D632120B1760023B9A7 /* Motor2.swift */,
+				88EF0D612120B1730023B9A7 /* TrafikveCevre1.swift */,
+				88EF0D652120B17E0023B9A7 /* TrafikveCevre2.swift */,
+				88EF0D5C2120B15A0023B9A7 /* EgitimVideolari.storyboard */,
+				88B81BF02293E63B00DD7426 /* TrafikAdabiVC.swift */,
+			);
+			path = EgitimVideolari;
+			sourceTree = "<group>";
+		};
+		88C15B38205F38B000CBD233 /* ilkYardim */ = {
+			isa = PBXGroup;
+			children = (
+				88C15B49205F38D000CBD233 /* ilkyardim17.storyboard */,
+				886AE46A21209FA600F164A3 /* ilkyardim17.swift */,
+				88281D0A2081A8A200EDB24B /* ilkyardim17Cell.swift */,
+				88583D4B21209D3C00AAF6C4 /* iAgustos18.swift */,
+				88583D4C21209D3D00AAF6C4 /* iAgustos18Bank.swift */,
+				880DB52A20924F3F0089C315 /* iNisan18.swift */,
+				880DB522209244B70089C315 /* iNisan18Bank.swift */,
+				88281D072081A89F00EDB24B /* iSubat18.swift */,
+				88281D022081A89C00EDB24B /* iSubat18Bank.swift */,
+				88BB83FB21FCF65A0083A6A5 /* iOcak19Bank.swift */,
+				88BB83FD21FCF6B20083A6A5 /* iOcak19Quiz.swift */,
+				8807137B2229B08400E73529 /* iSubat19Bank.swift */,
+				8807137D2229B0E200E73529 /* iSubat19Quiz.swift */,
+				88B7295D224DA29100362A54 /* iMarch19Bank.swift */,
+				88B7295F224DA32800362A54 /* iMarch19Quiz.swift */,
+			);
+			path = ilkYardim;
+			sourceTree = "<group>";
+		};
+		88C15B5E205F38FB00CBD233 /* Motor */ = {
+			isa = PBXGroup;
+			children = (
+				88C15B6F205F391F00CBD233 /* motor.storyboard */,
+				886AE46C2120A4A700F164A3 /* motor17.swift */,
+				88372C6C224D7D0D00F4E482 /* motor17Cell.swift */,
+				886AE46E2120A4AF00F164A3 /* mAgustos18.swift */,
+				886AE46F2120A4B000F164A3 /* mAgustos18Bank.swift */,
+				880DB52820924CCF0089C315 /* mNisan18.swift */,
+				880DB5202092446C0089C315 /* mNisan18Bank.swift */,
+				88281CEA2081A7D000EDB24B /* mSubat18.swift */,
+				88281CEC2081A7D200EDB24B /* mSubat18Bank.swift */,
+				88BB83F721FCF2AC0083A6A5 /* mOcak19Bank.swift */,
+				88BB83F921FCF32B0083A6A5 /* mOcak19Quiz.swift */,
+				880713772229AC9F00E73529 /* mSubat19Bank.swift */,
+				880713792229ACFE00E73529 /* mSubat19Quiz.swift */,
+				88B72959224D9EBF00362A54 /* mMarch19Bank.swift */,
+				88B7295B224D9F3A00362A54 /* mMarch19Quiz.swift */,
+			);
+			path = Motor;
+			sourceTree = "<group>";
+		};
+		88C15BB4205F396300CBD233 /* trafik */ = {
+			isa = PBXGroup;
+			children = (
+				88C15BC5205F397A00CBD233 /* trafik17.storyboard */,
+				884E8E09212190AC00CD6265 /* trafik17.swift */,
+				88281C8A2081A46700EDB24B /* trafik17Cell.swift */,
+				884E8E062121900800CD6265 /* tAgustos18Bank.swift */,
+				884E8E052121900700CD6265 /* tAgustos18Quiz.swift */,
+				880DB52620924A330089C315 /* tNisan18Quiz.swift */,
+				880DB51E209244050089C315 /* tNisan18Bank.swift */,
+				88281C912081A46F00EDB24B /* tSubat18Bank.swift */,
+				88281C892081A46600EDB24B /* tSubat18Quiz.swift */,
+				88BA5AA321FCE9850079712C /* tOcak19Bank.swift */,
+				88BA5AA521FCE9D80079712C /* tOcak19Quiz.swift */,
+				880713732229A20400E73529 /* tSubat19Quiz.swift */,
+				880713752229A23C00E73529 /* tSubat19Bank.swift */,
+				88B72955224D992400362A54 /* tMarch19Bank.swift */,
+				88B72957224D99B100362A54 /* tMarch19Quiz.swift */,
+			);
+			path = trafik;
+			sourceTree = "<group>";
+		};
+		88C15BC7205F397E00CBD233 /* TrafikAdabi */ = {
+			isa = PBXGroup;
+			children = (
+				88C15BD8205F399E00CBD233 /* trafikAdabi.storyboard */,
+				884E8E0F2121918300CD6265 /* trafikAdabi17.swift */,
+				88281C6E2081A2CF00EDB24B /* trafikAdabi17Cell.swift */,
+				884E8E0C2121916B00CD6265 /* taAgustos18Bank.swift */,
+				884E8E0B2121916A00CD6265 /* taAgustos18Quiz.swift */,
+				880DB51C209243140089C315 /* taNisan18Bank.swift */,
+				880DB524209246060089C315 /* taNisan18Quiz.swift */,
+				88281C742081A2D500EDB24B /* Questionn.swift */,
+				88281C6D2081A2CE00EDB24B /* taSubat18Bank.swift */,
+				88281C702081A2D100EDB24B /* taSubat18Quiz.swift */,
+				88BA5AA121FCC92A0079712C /* taOcak19Bank.swift */,
+				88BA5A9F21FCC8FA0079712C /* taOcak19Quiz.swift */,
+				8807136F22299C5B00E73529 /* taSubat19Quiz.swift */,
+				8807137122299C8900E73529 /* taSubat19Bank.swift */,
+				88372C6E224D884800F4E482 /* taMart19Bank.swift */,
+				88372C70224D88C500F4E482 /* taMart19Quiz.swift */,
+			);
+			path = TrafikAdabi;
+			sourceTree = "<group>";
+		};
+		A04C17EF506DABB5CD66C60E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				885FC6792274F06B00F57F2F /* StoreKit.framework */,
+				88281C3F20819EFB00EDB24B /* CoreData.framework */,
+				CB9D4DA952B81E7480E85F1D /* Pods_Ehliyet_2017.framework */,
+				55AA4EC8686B89A2566727CA /* Pods_Ehliyet_2017Tests.framework */,
+				7A735BEAA25526F05B5910A0 /* Pods_Ehliyet_2017UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +534,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 015656D91F9AC5D1002606F3 /* Build configuration list for PBXNativeTarget "Ehliyet-2017" */;
 			buildPhases = (
+				4D3891DF7F070E6B77939778 /* [CP] Check Pods Manifest.lock */,
 				015656AD1F9AC5D1002606F3 /* Sources */,
 				015656AE1F9AC5D1002606F3 /* Frameworks */,
 				015656AF1F9AC5D1002606F3 /* Resources */,
+				AEC113801D027BF8F27A33B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +553,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 015656DC1F9AC5D1002606F3 /* Build configuration list for PBXNativeTarget "Ehliyet-2017Tests" */;
 			buildPhases = (
+				164B81D190CA079E25407FF8 /* [CP] Check Pods Manifest.lock */,
 				015656C11F9AC5D1002606F3 /* Sources */,
 				015656C21F9AC5D1002606F3 /* Frameworks */,
 				015656C31F9AC5D1002606F3 /* Resources */,
@@ -167,6 +572,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 015656DF1F9AC5D1002606F3 /* Build configuration list for PBXNativeTarget "Ehliyet-2017UITests" */;
 			buildPhases = (
+				B6B76E8F06A15186663394A7 /* [CP] Check Pods Manifest.lock */,
 				015656CC1F9AC5D1002606F3 /* Sources */,
 				015656CD1F9AC5D1002606F3 /* Frameworks */,
 				015656CE1F9AC5D1002606F3 /* Resources */,
@@ -193,7 +599,19 @@
 				TargetAttributes = {
 					015656B01F9AC5D1002606F3 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					015656C41F9AC5D1002606F3 = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -208,7 +626,7 @@
 				};
 			};
 			buildConfigurationList = 015656AC1F9AC5D1002606F3 /* Build configuration list for PBXProject "Ehliyet-2017" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -233,8 +651,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				015656BF1F9AC5D1002606F3 /* LaunchScreen.storyboard in Resources */,
+				88EF0D5D2120B15A0023B9A7 /* EgitimVideolari.storyboard in Resources */,
+				88C15B4A205F38D000CBD233 /* ilkyardim17.storyboard in Resources */,
+				88C15BC6205F397A00CBD233 /* trafik17.storyboard in Resources */,
+				88C15B70205F391F00CBD233 /* motor.storyboard in Resources */,
 				015656BC1F9AC5D1002606F3 /* Assets.xcassets in Resources */,
 				015656BA1F9AC5D1002606F3 /* Main.storyboard in Resources */,
+				88067ACA2275AEBF00A81653 /* GoogleService-Info.plist in Resources */,
+				88C15BD9205F399F00CBD233 /* trafikAdabi.storyboard in Resources */,
+				881256A621EF6DED00B4AB9F /* sinav2019.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +679,205 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		164B81D190CA079E25407FF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ehliyet-2017Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D3891DF7F070E6B77939778 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ehliyet-2017-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEC113801D027BF8F27A33B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ehliyet-2017/Pods-Ehliyet-2017-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ehliyet-2017/Pods-Ehliyet-2017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B76E8F06A15186663394A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ehliyet-2017UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		015656AD1F9AC5D1002606F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				015656B71F9AC5D1002606F3 /* ViewController.swift in Sources */,
-				015656B51F9AC5D1002606F3 /* AppDelegate.swift in Sources */,
+				88EF0D682120B17E0023B9A7 /* EgitimVideolari.swift in Sources */,
+				886AE46D2120A4A700F164A3 /* motor17.swift in Sources */,
+				880713782229AC9F00E73529 /* mSubat19Bank.swift in Sources */,
+				88C15BF0205F3C1700CBD233 /* AppDelegate.swift in Sources */,
+				881256AF21EF786B00B4AB9F /* List2019.swift in Sources */,
+				880DB52920924CCF0089C315 /* mNisan18.swift in Sources */,
+				88281C472081A01F00EDB24B /* Sonuclar+CoreDataClass.swift in Sources */,
+				880DB52720924A330089C315 /* tNisan18Quiz.swift in Sources */,
+				884E8E072121900800CD6265 /* tAgustos18Quiz.swift in Sources */,
+				88BB83FA21FCF32B0083A6A5 /* mOcak19Quiz.swift in Sources */,
+				88EF0D6D2120B17E0023B9A7 /* TrafikveCevre2.swift in Sources */,
+				88EF0D672120B17E0023B9A7 /* DireksiyonEgitimi.swift in Sources */,
+				88281D1C2081A96000EDB24B /* sonuclarimList.swift in Sources */,
+				88372C6F224D884800F4E482 /* taMart19Bank.swift in Sources */,
+				884E8E102121918400CD6265 /* trafikAdabi17.swift in Sources */,
+				884E8E0E2121916B00CD6265 /* taAgustos18Bank.swift in Sources */,
+				88281C9F2081A47000EDB24B /* tSubat18Bank.swift in Sources */,
+				886AE4712120A4B000F164A3 /* mAgustos18Bank.swift in Sources */,
+				88281C7D2081A2D600EDB24B /* trafikAdabi17Cell.swift in Sources */,
+				88C15BE3205F39C700CBD233 /* CollectionViewCell.swift in Sources */,
+				886AE46B21209FA600F164A3 /* ilkyardim17.swift in Sources */,
+				88281D102081A8A200EDB24B /* iSubat18Bank.swift in Sources */,
+				88281C982081A47000EDB24B /* trafik17Cell.swift in Sources */,
+				88B72958224D99B100362A54 /* tMarch19Quiz.swift in Sources */,
+				881256AB21EF774A00B4AB9F /* Ocak19Bank.swift in Sources */,
+				88281CF82081A7D300EDB24B /* mSubat18.swift in Sources */,
+				88583D4E21209D3D00AAF6C4 /* iAgustos18Bank.swift in Sources */,
+				88B72956224D992400362A54 /* tMarch19Bank.swift in Sources */,
+				88281D152081A8A200EDB24B /* iSubat18.swift in Sources */,
+				88583D4D21209D3D00AAF6C4 /* iAgustos18.swift in Sources */,
+				88BA5AA221FCC92A0079712C /* taOcak19Bank.swift in Sources */,
+				88BB83F821FCF2AC0083A6A5 /* mOcak19Bank.swift in Sources */,
+				88B7295C224D9F3A00362A54 /* mMarch19Quiz.swift in Sources */,
+				884E8E082121900800CD6265 /* tAgustos18Bank.swift in Sources */,
+				88C15BE9205F39C700CBD233 /* sinavyilsecimi.swift in Sources */,
+				88BB83FE21FCF6B20083A6A5 /* iOcak19Quiz.swift in Sources */,
+				8807137022299C5B00E73529 /* taSubat19Quiz.swift in Sources */,
+				88281D182081A8A200EDB24B /* ilkyardim17Cell.swift in Sources */,
+				88281C482081A01F00EDB24B /* Sonuclar+CoreDataProperties.swift in Sources */,
+				880DB52B20924F3F0089C315 /* iNisan18.swift in Sources */,
+				880713762229A23C00E73529 /* tSubat19Bank.swift in Sources */,
+				88281C7C2081A2D600EDB24B /* taSubat18Bank.swift in Sources */,
+				8807137C2229B08400E73529 /* iSubat19Bank.swift in Sources */,
+				88904084206E636000034A21 /* iletisim.swift in Sources */,
+				88281C972081A47000EDB24B /* tSubat18Quiz.swift in Sources */,
+				8807136C2229950300E73529 /* Subat19Quiz.swift in Sources */,
+				884E8E0D2121916B00CD6265 /* taAgustos18Quiz.swift in Sources */,
+				88EF0D6A2120B17E0023B9A7 /* Motor1.swift in Sources */,
+				88281CFA2081A7D300EDB24B /* mSubat18Bank.swift in Sources */,
+				88C15BE5205F39C700CBD233 /* PageViewController.swift in Sources */,
+				880DB51F209244050089C315 /* tNisan18Bank.swift in Sources */,
+				88281C4420819F3500EDB24B /* dataCore.xcdatamodeld in Sources */,
+				88281C7F2081A2D600EDB24B /* taSubat18Quiz.swift in Sources */,
+				88EF0D662120B17E0023B9A7 /* EgitimVideolariCell.swift in Sources */,
+				88C15B24205F382300CBD233 /* CardView.swift in Sources */,
+				88C15BEA205F39C700CBD233 /* SinavHakkinda.swift in Sources */,
+				880713742229A20400E73529 /* tSubat19Quiz.swift in Sources */,
+				88BA5AA021FCC8FA0079712C /* taOcak19Quiz.swift in Sources */,
+				880DB525209246060089C315 /* taNisan18Quiz.swift in Sources */,
+				881256AD21EF77E800B4AB9F /* Ocak19Cell.swift in Sources */,
+				88B72960224DA32800362A54 /* iMarch19Quiz.swift in Sources */,
+				88EF0D692120B17E0023B9A7 /* TrafikveCevre1.swift in Sources */,
+				8807137A2229ACFE00E73529 /* mSubat19Quiz.swift in Sources */,
+				88281C832081A2D600EDB24B /* Questionn.swift in Sources */,
+				88281D202081ABF100EDB24B /* HomePage.swift in Sources */,
+				880DB51D209243140089C315 /* taNisan18Bank.swift in Sources */,
+				88BA5AA421FCE9850079712C /* tOcak19Bank.swift in Sources */,
+				88B81BF12293E63B00DD7426 /* TrafikAdabiVC.swift in Sources */,
+				88BA5AA621FCE9D80079712C /* tOcak19Quiz.swift in Sources */,
+				88281C4A2081A04800EDB24B /* resultService.swift in Sources */,
+				88372C6B224D6C0600F4E482 /* Mart19Quiz.swift in Sources */,
+				8807136E2229955300E73529 /* Subat19Bank.swift in Sources */,
+				881256A921EF761900B4AB9F /* Ocak19Quiz.swift in Sources */,
+				88B7295A224D9EBF00362A54 /* mMarch19Bank.swift in Sources */,
+				88C15BE8205F39C700CBD233 /* SinavaKalanSure.swift in Sources */,
+				88372C6D224D7D0D00F4E482 /* motor17Cell.swift in Sources */,
+				880DB5212092446C0089C315 /* mNisan18Bank.swift in Sources */,
+				8807137E2229B0E200E73529 /* iSubat19Quiz.swift in Sources */,
+				88EF0D6C2120B17E0023B9A7 /* ilkyardimev.swift in Sources */,
+				88BB83FC21FCF65A0083A6A5 /* iOcak19Bank.swift in Sources */,
+				88EF0D6B2120B17E0023B9A7 /* Motor2.swift in Sources */,
+				88372C69224D6A5200F4E482 /* Mart19Bank.swift in Sources */,
+				88C15B23205F382300CBD233 /* RoundButton.swift in Sources */,
+				884E8E0A212190AC00CD6265 /* trafik17.swift in Sources */,
+				880DB523209244B70089C315 /* iNisan18Bank.swift in Sources */,
+				8807137222299C8900E73529 /* taSubat19Bank.swift in Sources */,
+				883777B82081934F00828320 /* CirclePath.swift in Sources */,
+				886AE4702120A4B000F164A3 /* mAgustos18.swift in Sources */,
+				88281D1E2081AA4D00EDB24B /* SonuclarimListCell.swift in Sources */,
+				88372C71224D88C500F4E482 /* taMart19Quiz.swift in Sources */,
+				88C15BE6205F39C700CBD233 /* KullanmaTalimati.swift in Sources */,
+				88B7295E224DA29100362A54 /* iMarch19Bank.swift in Sources */,
+				88D1B0AF218DE5B70069598E /* info.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,50 +1034,81 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		015656DA1F9AC5D1002606F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75989F384FCC22A6A5C45DBB /* Pods-Ehliyet-2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Ehliyet-2017/Ehliyet-2017.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98X7S4Y4AT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ehliyet-2017",
+				);
 				INFOPLIST_FILE = "Ehliyet-2017/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yilmazer.Ehliyet-2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Ehliyet-2017/Ehliyet-2017-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		015656DB1F9AC5D1002606F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6F75F4328126274515957A /* Pods-Ehliyet-2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Ehliyet-2017/Ehliyet-2017.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98X7S4Y4AT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ehliyet-2017",
+				);
 				INFOPLIST_FILE = "Ehliyet-2017/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yilmazer.Ehliyet-2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Ehliyet-2017/Ehliyet-2017-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		015656DD1F9AC5D1002606F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6EB5A5E6B0ABD9724B7D060 /* Pods-Ehliyet-2017Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98X7S4Y4AT;
 				INFOPLIST_FILE = "Ehliyet-2017Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yilmazer.Ehliyet-2017Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -471,13 +1119,18 @@
 		};
 		015656DE1F9AC5D1002606F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D632485592A5230D8F939C /* Pods-Ehliyet-2017Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98X7S4Y4AT;
 				INFOPLIST_FILE = "Ehliyet-2017Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yilmazer.Ehliyet-2017Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -488,12 +1141,17 @@
 		};
 		015656E01F9AC5D1002606F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FBDFAF0B2F5B6C336EE0F2 /* Pods-Ehliyet-2017UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98X7S4Y4AT;
 				INFOPLIST_FILE = "Ehliyet-2017UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yilmazer.Ehliyet-2017UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -504,12 +1162,17 @@
 		};
 		015656E11F9AC5D1002606F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7088AE539A194BEDA0AF7430 /* Pods-Ehliyet-2017UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98X7S4Y4AT;
 				INFOPLIST_FILE = "Ehliyet-2017UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yilmazer.Ehliyet-2017UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -558,6 +1221,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		88281C4220819F3500EDB24B /* dataCore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				88281C4320819F3500EDB24B /* dataCore.xcdatamodel */,
+			);
+			currentVersion = 88281C4320819F3500EDB24B /* dataCore.xcdatamodel */;
+			path = dataCore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 015656A91F9AC5D1002606F3 /* Project object */;
 }

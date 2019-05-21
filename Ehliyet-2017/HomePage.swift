@@ -17,34 +17,29 @@ class HomePage: UIViewController, UICollectionViewDelegate, UICollectionViewData
                       "Trafik ve Çevre Çıkmış Sınav Soruları",
                       "Araç Tekniği (Motor) Çıkmış Sınav Soruları",
                       "Trafik Adabı Çıkmış Sınav Soruları",
-                      "Kısa Notlar",
-                      "Eğitim Videoları",
                       "Sonuclarım",
                       "Uygulama Hakkında",
-                      "Sınava Kalan Süre",
-                      "Sınav Hakkında Bilgi",
-                      "İletişim, Şikayet"]
+                      "Eğitim      Videoları",
+                      " - İletişim -  - Şikayet - "]
     
-//    "Reklamsız Versionu"
+    //    "Reklamsız Versionu"
     
     let homeImages = [UIImage(named:"2")!,
                       UIImage(named:"3")!,
-                      UIImage(named:"6")!,
                       UIImage(named:"4")!,
-                      UIImage(named:"7")!,
                       UIImage(named:"5")!,
-                      UIImage(named:"videoicon")!,
-                      UIImage(named:"results-icon")!,
-                      UIImage(named:"9")!,
-                      UIImage(named:"sure")!,
+                      UIImage(named:"6")!,
+                      UIImage(named:"7")!,
                       UIImage(named:"8")!,
-                      UIImage(named:"iletisim")!]
+                      UIImage(named:"9")!,
+                      UIImage(named:"10")!,
+                      UIImage(named:"10")!]
     
-//     UIImage(named:"reklamsiz")!
-
+    //     UIImage(named:"reklamsiz")!
+    
     @IBOutlet weak var CollectionView: UICollectionView!
     
-     var WebAdresi = "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1318809913&mt=8"
+    //var WebAdresi = "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1318809913&mt=8"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,26 +47,28 @@ class HomePage: UIViewController, UICollectionViewDelegate, UICollectionViewData
         if UserDefaults.standard.object(forKey: "val") != nil {
             self.score = UserDefaults.standard.object(forKey: "val") as! Int
         }
-       
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    
+        
         
         // Dispose of any resources that can be recreated.
     }
     
+    
     override func viewDidAppear(_ animated: Bool) {
-       
+        
         if score == 0 {
-            myAlert(title: "HOŞGELDİNİZ", message: "Merhaba Değerli Kullanıcımız.\n\nSizler için bu alanda en iyisini yaptık.\n\nEkibimiz bu uygulama üzerinde uzun zamandır çalışıyor. Umarım uygulamayı beğenirsiniz.\n\nSınavda Başarılar Dilerim.\n\nNOT: Reklam, her yaptığınız yanlış soruda gelir. Çok reklam istemiyorsanız az yanlış yapın. 😉\n\n2.NOT: Reklam sayısını uygulamaya 5 yıldız vererek reklam sayısını ciddi oranda azaltabilirsiniz. 🤫")
+            myAlert(title: "HOŞGELDİNİZ", message: "Merhaba Değerli Kullanıcımız.\n\nSizler için bu alanda en iyisini yaptık.\n\nEkibimiz bu uygulama üzerinde uzun zamandır çalışıyor. Umarım uygulamayı beğenirsiniz.\n\nSınavda Başarılar Dilerim. \nUygulamaya 5 yıldız vererek bize destek olursanız seviniriz.")
         }
         if score >= 1 {
         }
         
     }
+    
     
     func myAlert(title: String, message: String) {
         
@@ -80,7 +77,7 @@ class HomePage: UIViewController, UICollectionViewDelegate, UICollectionViewData
         alert.addAction(UIAlertAction(title: "TAMAM", style: .default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
             
-       
+            
             self.score =  self.score + 1
             
             UserDefaults.standard.set(self.score, forKey: "val")
@@ -89,6 +86,7 @@ class HomePage: UIViewController, UICollectionViewDelegate, UICollectionViewData
         
         self.present(alert, animated: true, completion: nil)
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return homeTitles.count
@@ -110,5 +108,5 @@ class HomePage: UIViewController, UICollectionViewDelegate, UICollectionViewData
         let viewController = storyboard?.instantiateViewController(withIdentifier: vcName)
         self.navigationController?.pushViewController(viewController!, animated: true)
     }
-
+    
 }

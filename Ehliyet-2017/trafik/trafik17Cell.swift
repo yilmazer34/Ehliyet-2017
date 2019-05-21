@@ -10,14 +10,14 @@ import UIKit
 
 class trafik17Cell: UITableViewCell {
     
-    @IBOutlet weak var mCheck: UIImageView!
     @IBOutlet weak var mTitle: UILabel!
+    @IBOutlet weak var mCheck: UIImageView!
     @IBOutlet weak var Correct: UILabel!
     @IBOutlet weak var inCorrect: UILabel!
-    @IBOutlet weak var mCorrect: UILabel!
-    @IBOutlet weak var mIncorrect: UILabel!
     @IBOutlet weak var cozum: UILabel!
-    @IBOutlet weak var soru: UILabel!
+    @IBOutlet weak var puanS: UILabel!
+    @IBOutlet weak var basariOrani: UILabel!
+    @IBOutlet weak var basariProgress: CirclePath!
 
     override func awakeFromNib() {
         super.awakeFromNib()

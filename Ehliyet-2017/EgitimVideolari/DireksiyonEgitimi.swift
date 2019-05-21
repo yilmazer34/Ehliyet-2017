@@ -24,13 +24,10 @@ class DireksiyonEgitimi: UIViewController, GADInterstitialDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SVProgressHUD.show(withStatus: "Yükleniyor...")
-        
         let url = URL(string: "https://youtu.be/hb6D5lFEOUE?list=PL3mzdMU88fq2Swsv2-PjWJgwaLDF7CLED")
         let request = URLRequest(url: url!)
         
         webKit.load(request)
-        SVProgressHUD.dismiss(withDelay: 7)
         
         self.fullScreenads = self.CreatAndLoadIntertial()
         
@@ -46,7 +43,7 @@ class DireksiyonEgitimi: UIViewController, GADInterstitialDelegate {
     
     @objc func updataTime() {
         
-        if totalSec == 60 {
+        if totalSec == 6000 {
             totalSec = 0
             print(totalSec)
         } else {
@@ -54,7 +51,7 @@ class DireksiyonEgitimi: UIViewController, GADInterstitialDelegate {
             print(totalSec)
         }
         
-        if totalSec == 60 {
+        if totalSec == 6000{
             print(totalSec)
             self.fullScreenads = self.CreatAndLoadIntertial()
         }

@@ -46,7 +46,7 @@ class TrafikveCevre2: UIViewController, GADInterstitialDelegate {
     
     @objc func updataTime() {
         
-        if totalSec == 60 {
+        if totalSec == 6000 {
             totalSec = 0
             print(totalSec)
         } else {
@@ -54,7 +54,7 @@ class TrafikveCevre2: UIViewController, GADInterstitialDelegate {
             print(totalSec)
         }
         
-        if totalSec == 60 {
+        if totalSec == 6000 {
             print(totalSec)
             self.fullScreenads = self.CreatAndLoadIntertial()
         }

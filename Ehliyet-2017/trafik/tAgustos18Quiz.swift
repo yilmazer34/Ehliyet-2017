@@ -5,7 +5,7 @@
 
 import UIKit
 import GoogleMobileAds
-import KRProgressHUD
+
 
 class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
     
@@ -69,10 +69,10 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
     func updateQuestion(){
         if  questionNumber <= allQuestions.list.count - 1 && questionNumber > -1 {
             qImage.image = UIImage(named: (allQuestions.list[questionNumber].questionImage))
-            optionA.setTitle(allQuestions.list[questionNumber].optionA, for: UIControlState.normal)
-            optionB.setTitle(allQuestions.list[questionNumber].optionB, for: UIControlState.normal)
-            optionC.setTitle(allQuestions.list[questionNumber].optionC, for: UIControlState.normal)
-            optionD.setTitle(allQuestions.list[questionNumber].optionD, for: UIControlState.normal)
+            optionA.setTitle(allQuestions.list[questionNumber].optionA, for: UIControl.State.normal)
+            optionB.setTitle(allQuestions.list[questionNumber].optionB, for: UIControl.State.normal)
+            optionC.setTitle(allQuestions.list[questionNumber].optionC, for: UIControl.State.normal)
+            optionD.setTitle(allQuestions.list[questionNumber].optionD, for: UIControl.State.normal)
             optionA.backgroundColor = UIColor.white
             optionB.backgroundColor = UIColor.white
             optionC.backgroundColor = UIColor.white
@@ -89,7 +89,7 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
         if Tagustos18[questionNumber] == "null" {
             
             if sender.tag == selectedAnswer {
-                Correct()
+              
                 print("correct")
                 sender.backgroundColor = UIColor.green
                 correct += 1
@@ -112,7 +112,7 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
                 }
             } else {
                 print("wrong")
-                Wrong()
+              
                 sender.backgroundColor = UIColor.red
                 incorrect += 1
                 wrongText.text = "Yanlış: \(incorrect)"
@@ -145,7 +145,7 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
             if Tagustos18[questionNumber] != String(selectedAnswer) {
                 if sender.tag == selectedAnswer {
                     print("correct")
-                    Correct()
+                  
                     sender.backgroundColor = UIColor.green
                     correct += 1
                     incorrect -= 1
@@ -196,7 +196,7 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
                         defaults.set(Tagustos18, forKey: "Tagustos18")
                         defaults.synchronize()
                     }
-                    Wrong()
+                    
                     wrongText.text = "Yanlış: \(incorrect)"
                     correctText.text = "Doğru: \(correct)"
                     sender.backgroundColor = UIColor.red
@@ -204,7 +204,7 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
                 }
             } else {
                 if sender.tag == selectedAnswer {
-                    Correct()
+                   
                     print("correct")
                     sender.backgroundColor = UIColor.green
                     correctText.text = "Doğru: \(correct)"
@@ -254,7 +254,7 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
                         defaults.set(Tagustos18, forKey: "Tagustos18")
                         defaults.synchronize()
                     }
-                    Wrong()
+                  
                     incorrect += 1
                     correct -= 1
                     wrongText.text = "Yanlış: \(incorrect)"
@@ -346,9 +346,9 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
     }
     
     func formating() {
-        let alertController = UIAlertController(title: "UYARI", message: "Bu testteki verdiğiniz tüm yanıtların kayıtlarını silerek, sıfırlamak istiyormusunuz ?", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "UYARI", message: "Bu testteki verdiğiniz tüm yanıtların kayıtlarını silerek, sıfırlamak istiyormusunuz ?", preferredStyle: UIAlertController.Style.alert)
         
-        let ok = UIAlertAction(title: "EVET", style: UIAlertActionStyle.default, handler: {(action) -> Void in
+        let ok = UIAlertAction(title: "EVET", style: UIAlertAction.Style.default, handler: {(action) -> Void in
             
             self.correct = 0
             self.incorrect = 0
@@ -363,7 +363,7 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
             }
         })
         
-        let cancel = UIAlertAction(title: "HAYIR", style: UIAlertActionStyle.default, handler: {(action) -> Void in
+        let cancel = UIAlertAction(title: "HAYIR", style: UIAlertAction.Style.default, handler: {(action) -> Void in
             
             
         })
@@ -406,8 +406,8 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
     
     func alert(){
         
-        let alertController = UIAlertController(title: "SONUÇ", message: "\n\nToplam Doğru Sayısı: " + String(correct) + "\n\nToplam Yanlış Sayısı: " + String(incorrect), preferredStyle: UIAlertControllerStyle.alert)
-        let ok = UIAlertAction(title: "TAMAM", style: UIAlertActionStyle.default, handler: {(action) -> Void in
+        let alertController = UIAlertController(title: "SONUÇ", message: "\n\nToplam Doğru Sayısı: " + String(correct) + "\n\nToplam Yanlış Sayısı: " + String(incorrect), preferredStyle: UIAlertController.Style.alert)
+        let ok = UIAlertAction(title: "TAMAM", style: UIAlertAction.Style.default, handler: {(action) -> Void in
             
             UserDefaults.standard.set(self.correct, forKey: "vtCAgustos18")
             UserDefaults.standard.synchronize()
@@ -442,18 +442,7 @@ class tAgustos18Quiz: UIViewController, GADInterstitialDelegate   {
         print("\(questionNumber)")
     }
     
-    func Wrong() {
-        KRProgressHUD.set(maskType: .black)
-        KRProgressHUD.set(style: .custom(background: .white, text: .red, icon: nil))
-        KRProgressHUD.set(font: UIFont.systemFont(ofSize: 20))
-        KRProgressHUD.showError(withMessage: "YANLIŞ")
-    }
-    
-    func Correct() {
-        KRProgressHUD.set(style: .custom(background: .white, text: .green, icon: nil))
-        KRProgressHUD.set(font: UIFont.systemFont(ofSize: 20))
-        KRProgressHUD.showSuccess(withMessage: "DOĞRU")
-    }
+
     
     func CreatAndLoadIntertial () -> GADInterstitial? {
         

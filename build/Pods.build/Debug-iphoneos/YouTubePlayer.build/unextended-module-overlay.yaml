@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/yilmazer/Desktop/İOS PROJELERİM/Ehliyet-2017/build/Debug-iphoneos/YouTubePlayer/YouTubePlayer.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/yilmazer/Desktop/İOS PROJELERİM/Ehliyet-2017/build/Pods.build/Debug-iphoneos/YouTubePlayer.build/unextended-module.modulemap',
+    }]
+  }]
+}

@@ -9,13 +9,13 @@
 
 import UIKit
 import GoogleMobileAds
-import KRProgressHUD
 
-class taMayis19Quiz: UIViewController,  GADInterstitialDelegate   {
+
+class taMart19Quiz: UIViewController,  GADInterstitialDelegate   {
     
     var fullScreenads :GADInterstitial!
     
-    let allQuestions = taSubat19Bank()
+    let allQuestions = taMart19Bank()
     var questionNumber: Int = 0
     var correct: Int = 0
     var incorrect: Int = 0
@@ -37,7 +37,7 @@ class taMayis19Quiz: UIViewController,  GADInterstitialDelegate   {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Trafik Adabı Mayıs 2019 E-Sınav"
+        title = "Trafik Adabı Mart 2019 E-Sınav"
         
         correctText.text = "Doğru: \(correct)"
         wrongText.text = "Yanlış: \(incorrect)"
@@ -53,10 +53,10 @@ class taMayis19Quiz: UIViewController,  GADInterstitialDelegate   {
     func updateQuestion(){
         if  questionNumber <= allQuestions.list.count - 1 {
             qImage.image = UIImage(named: (allQuestions.list[questionNumber].questionImage))
-            optionA.setTitle(allQuestions.list[questionNumber].optionA, for: UIControlState.normal)
-            optionB.setTitle(allQuestions.list[questionNumber].optionB, for: UIControlState.normal)
-            optionC.setTitle(allQuestions.list[questionNumber].optionC, for: UIControlState.normal)
-            optionD.setTitle(allQuestions.list[questionNumber].optionD, for: UIControlState.normal)
+            optionA.setTitle(allQuestions.list[questionNumber].optionA, for: UIControl.State.normal)
+            optionB.setTitle(allQuestions.list[questionNumber].optionB, for: UIControl.State.normal)
+            optionC.setTitle(allQuestions.list[questionNumber].optionC, for: UIControl.State.normal)
+            optionD.setTitle(allQuestions.list[questionNumber].optionD, for: UIControl.State.normal)
             optionA.backgroundColor = UIColor.white
             optionB.backgroundColor = UIColor.white
             optionC.backgroundColor = UIColor.white
@@ -70,7 +70,7 @@ class taMayis19Quiz: UIViewController,  GADInterstitialDelegate   {
     @IBAction func answerPressed(_ sender: UIButton) {
         
         if sender.tag == selectedAnswer {
-            Correct()
+          
             print("correct")
             sender.backgroundColor = UIColor.green
             correct += 1
@@ -78,7 +78,7 @@ class taMayis19Quiz: UIViewController,  GADInterstitialDelegate   {
             
         } else {
             print("wrong")
-            Wrong()
+          
             sender.backgroundColor = UIColor.red
             incorrect += 1
             wrongText.text = "Yanlış: \(incorrect)"
@@ -120,17 +120,17 @@ class taMayis19Quiz: UIViewController,  GADInterstitialDelegate   {
     
     func alert(){
         
-        let alertController = UIAlertController(title: "SONUÇ", message: "\n\nAldığınız Puan: " + String(format: "%.0f",(Float(correct) / 5) * 100) + "\n\nToplam Doğru Sayısı: " + String(correct) + "\n\nToplam Yanlış Sayısı: " + String(incorrect), preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "SONUÇ", message: "\n\nAldığınız Puan: " + String(format: "%.0f",(Float(correct) / 6) * 100) + "\n\nToplam Doğru Sayısı: " + String(correct) + "\n\nToplam Yanlış Sayısı: " + String(incorrect), preferredStyle: UIAlertController.Style.alert)
         
-        let ok = UIAlertAction(title: "TAMAM", style: UIAlertActionStyle.default, handler: {(action) -> Void in
-            
-            UserDefaults.standard.set(self.correct, forKey: "vaCSubat19")
+        let ok = UIAlertAction(title: "TAMAM", style: UIAlertAction.Style.default, handler: {(action) -> Void in
+             
+            UserDefaults.standard.set(self.correct, forKey: "vaCMart19")
             UserDefaults.standard.synchronize()
-            UserDefaults.standard.set(self.incorrect, forKey: "vaISubat19")
+            UserDefaults.standard.set(self.incorrect, forKey: "vaIMart19")
             UserDefaults.standard.synchronize()
             
             self.resultSave()
-            self.performSegue(withIdentifier: "saSubat19", sender: self)
+            self.performSegue(withIdentifier: "saMart19", sender: self)
         })
         
         alertController.addAction(ok)
@@ -139,31 +139,20 @@ class taMayis19Quiz: UIViewController,  GADInterstitialDelegate   {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if UserDefaults.standard.object(forKey: "vaCSubat19") != nil {
-            self.correct = UserDefaults.standard.object(forKey: "vaCSubat19") as! Int
+        if UserDefaults.standard.object(forKey: "vaCMart19") != nil {
+            self.correct = UserDefaults.standard.object(forKey: "vaCMart19") as! Int
         }
-        if UserDefaults.standard.object(forKey: "vaISubat19") != nil {
-            self.incorrect = UserDefaults.standard.object(forKey: "vaISubat19") as! Int
+        if UserDefaults.standard.object(forKey: "vaIMart19") != nil {
+            self.incorrect = UserDefaults.standard.object(forKey: "vaIMart19") as! Int
         }
         
-        let Mayis19 = segue.destination as! trafikAdabi17
-        Mayis19.correctMayis19 = correct
-        Mayis19.incorrectMayis19 = incorrect
-        Mayis19.puanMayis19 = String(correct*2)
+        let Mart19 = segue.destination as! trafikAdabi17
+        Mart19.correctMart19 = correct
+        Mart19.incorrectMart19 = incorrect
+        Mart19.puanMart19 = String(correct*2)
     }
     
-    func Wrong() {
-        KRProgressHUD.set(maskType: .black)
-        KRProgressHUD.set(style: .custom(background: .white, text: .red, icon: nil))
-        KRProgressHUD.set(font: UIFont.systemFont(ofSize: 20))
-        KRProgressHUD.showError(withMessage: "YANLIŞ")
-    }
-    
-    func Correct() {
-        KRProgressHUD.set(style: .custom(background: .white, text: .green, icon: nil))
-        KRProgressHUD.set(font: UIFont.systemFont(ofSize: 20))
-        KRProgressHUD.showSuccess(withMessage: "DOĞRU")
-    }
+  
     
     func greatBtn() {
         
@@ -224,12 +213,12 @@ class taMayis19Quiz: UIViewController,  GADInterstitialDelegate   {
         saat =  String(format: "%02d:%02d:%02d",hour,minute,saniye)
         
         let result = Sonuclar(context: resultService.contex)
-        result.dersadi = "Trafik Adabı Mayıs 2019 E-Sınav"
+        result.dersadi = "Trafik Adabı Mart 2019 E-Sınav"
         result.tarih = tarihh
         result.dogru = Int16(self.correct)
         result.yanlis = Int16(self.incorrect)
-        result.puan = Float((Float(self.correct) / 50) * 100 )
-        result.x = Float(self.correct) / 50
+        result.puan = Float((Float(self.correct) / 6) * 100 )
+        result.x = Float(self.correct) / 6
         result.saat = saat
         resultService.saveContext()
     }

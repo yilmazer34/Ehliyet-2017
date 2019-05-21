@@ -26,7 +26,7 @@ class Motor2: UIViewController, GADInterstitialDelegate {
         
         SVProgressHUD.show(withStatus: "Yükleniyor...")
         
-        let url = URL(string: "https://youtu.be/sfRfAhFkarg")
+        let url = URL(string: "https://www.youtube.com/watch?v=U9RU1J5WcB0")
         let request = URLRequest(url: url!)
         
         webKit.load(request)
@@ -46,7 +46,7 @@ class Motor2: UIViewController, GADInterstitialDelegate {
     
     @objc func updataTime() {
         
-        if totalSec == 60 {
+        if totalSec == 6000 {
             totalSec = 0
             print(totalSec)
         } else {
@@ -54,7 +54,7 @@ class Motor2: UIViewController, GADInterstitialDelegate {
             print(totalSec)
         }
         
-        if totalSec == 60 {
+        if totalSec == 6000 {
             print(totalSec)
             self.fullScreenads = self.CreatAndLoadIntertial()
         }

@@ -76,7 +76,7 @@ class sonuclarimList: UIViewController, UITableViewDataSource, UITableViewDelega
 //        self.navigationController?.pushViewController(viewController!, animated: true)
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    internal func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
             let favoriteToDelete = results[indexPath.row]

@@ -77,7 +77,27 @@
                         <viewLayoutGuide key="safeArea" id="loq-0J-pst"/>
                     </view>
                     <navigationItem key="navigationItem" title="KISA NOTLAR" id="750-24-VUr">
-                        <barButtonItem key="backBarButtonItem" title="GERİ" id="SNT-CC-Ls2"/>
+                        <barButtonItem key="backBarButtonItem" title="GERİ" id="SNT-CC-Ls2">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="PsW-08-znf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ovp-7P-pfi" customClass="RoundButton" customModule="Ehliyet_2017" customModuleProvider="target">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="ANASAYFA">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Jvw-4Y-pHq" kind="show" id="6NA-v2-eRh"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="hukukTable" destination="cq1-gZ-Fpl" id="KK2-3q-NbO"/>
@@ -206,6 +226,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kc-Es-f8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4310" y="-607"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="hw9-OH-ewr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Jvw-4Y-pHq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8m-Kf-x5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015" y="-898"/>
         </scene>
     </scenes>
     <resources>

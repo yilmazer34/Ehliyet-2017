@@ -1,0 +1,11 @@
+framework module YouTubePlayer {
+  umbrella header "YouTubePlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module YouTubePlayer.Swift {
+    header "YouTubePlayer-Swift.h"
+    requires objc
+}

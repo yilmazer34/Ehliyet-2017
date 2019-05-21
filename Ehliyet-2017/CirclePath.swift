@@ -149,14 +149,14 @@ class CirclePath: UIView {
         shapeLayer.fillColor = UIColor.clear.cgColor
         
         shapeLayer.strokeEnd = CGFloat(value)
-        shapeLayer.lineCap = "round"
+        shapeLayer.lineCap = CAShapeLayerLineCap(rawValue: "round")
         gradLayer.mask = shapeLayer
         
         
         backShape.path = path.cgPath
         backShape.fillColor = UIColor.clear.cgColor
         backShape.lineWidth = strokeWidth
-        backShape.lineCap = "round"
+        backShape.lineCap = CAShapeLayerLineCap(rawValue: "round")
         backShape.strokeColor = strokeColor.cgColor
 
     }

@@ -24,13 +24,10 @@ class TrafikveCevre1: UIViewController, GADInterstitialDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SVProgressHUD.show(withStatus: "Yükleniyor...")
-        
-        let url = URL(string: "https://youtu.be/bapUzYCjzz4")
+        let url = URL(string: "https://www.youtube.com/watch?v=SZc7SR7UzaE&t=65s")
         let request = URLRequest(url: url!)
         
         webKit.load(request)
-        SVProgressHUD.dismiss(withDelay: 5)
         
         self.fullScreenads = self.CreatAndLoadIntertial()
         
@@ -45,7 +42,7 @@ class TrafikveCevre1: UIViewController, GADInterstitialDelegate {
     
     @objc func updataTime() {
         
-        if totalSec == 60 {
+        if totalSec == 6000 {
             totalSec = 0
             print(totalSec)
         } else {
@@ -53,7 +50,7 @@ class TrafikveCevre1: UIViewController, GADInterstitialDelegate {
             print(totalSec)
         }
         
-        if totalSec == 60 {
+        if totalSec == 6000 {
             print(totalSec)
             self.fullScreenads = self.CreatAndLoadIntertial()
         }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KQr-JE-8hW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KQr-JE-8hW">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
         <!--EĞİTİM VİDEOLARI-->
         <scene sceneID="K3o-nR-lF6">
             <objects>
-                <viewController storyboardIdentifier="Eğitim Videoları" id="KQr-JE-8hW" customClass="EgitimVideolari" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Eğitim      Videoları" id="KQr-JE-8hW" customClass="EgitimVideolari" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FD2-3Q-Fa0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
         <!--Trafikve Cevre1-->
         <scene sceneID="n0K-Lu-DjF">
             <objects>
-                <viewController storyboardIdentifier="Trafik ve Çevre Bilgisi-1" id="AhE-dU-27c" customClass="TrafikveCevre1" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Trafik ve Çevre Bilgisi" id="AhE-dU-27c" customClass="TrafikveCevre1" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e7M-tC-3Tz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,7 +186,7 @@
         <!--Motor1-->
         <scene sceneID="QO6-KK-SvE">
             <objects>
-                <viewController storyboardIdentifier="Araç Tekniği (Motor)-1" id="o90-Q7-Ir4" customClass="Motor1" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Araç Tekniği (Motor)" id="o90-Q7-Ir4" customClass="Motor1" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EEM-5B-3KU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,9 +319,43 @@
             </objects>
             <point key="canvasLocation" x="15492" y="-641"/>
         </scene>
+        <!--Trafik AdabiVC-->
+        <scene sceneID="bPP-PT-vsi">
+            <objects>
+                <viewController storyboardIdentifier="Trafik Adabı" id="kxC-ov-hvc" customClass="TrafikAdabiVC" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wYr-6N-mRC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0r-wG-dsU">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e0r-wG-dsU" firstAttribute="bottom" secondItem="Xqs-jx-dkg" secondAttribute="bottom" id="AnU-Y5-GYw"/>
+                            <constraint firstItem="e0r-wG-dsU" firstAttribute="top" secondItem="Xqs-jx-dkg" secondAttribute="top" id="O0h-Bq-sUS"/>
+                            <constraint firstItem="e0r-wG-dsU" firstAttribute="leading" secondItem="Xqs-jx-dkg" secondAttribute="leading" id="Xrl-3u-P5h"/>
+                            <constraint firstItem="e0r-wG-dsU" firstAttribute="trailing" secondItem="Xqs-jx-dkg" secondAttribute="trailing" id="bi1-T2-aTI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xqs-jx-dkg"/>
+                    </view>
+                    <connections>
+                        <outlet property="webKit" destination="e0r-wG-dsU" id="d5A-cB-9A4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eva-AM-cRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16174" y="-642"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1" width="25" height="59"/>
-        <image name="2" width="500" height="500"/>
+        <image name="2" width="250" height="250"/>
     </resources>
 </document>

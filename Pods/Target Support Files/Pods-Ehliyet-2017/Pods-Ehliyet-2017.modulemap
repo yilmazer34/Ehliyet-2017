@@ -1,0 +1,6 @@
+framework module Pods_Ehliyet_2017 {
+  umbrella header "Pods-Ehliyet-2017-umbrella.h"
+
+  export *
+  module * { export * }
+}

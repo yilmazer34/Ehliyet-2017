@@ -26,12 +26,11 @@ class EgitimVideolari: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     private func setupDiagnostics() {
         
-        diagnosticArray.append(Diagnostic(name: "Trafik ve Çevre Bilgisi-1",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"videoicon"))
-        diagnosticArray.append(Diagnostic(name: "Trafik ve Çevre Bilgisi-2",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"videoicon"))
-        diagnosticArray.append(Diagnostic(name: "Araç Tekniği (Motor)-1",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"videoicon"))
-        diagnosticArray.append(Diagnostic(name: "Araç Tekniği (Motor)-2",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"videoicon"))
-        diagnosticArray.append(Diagnostic(name: "İlk Yardım",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"videoicon"))
-        diagnosticArray.append(Diagnostic(name: "Direksiyon Eğitimi",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"videoicon"))
+        diagnosticArray.append(Diagnostic(name: "Trafik ve Çevre Bilgisi",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"11"))
+        diagnosticArray.append(Diagnostic(name: "Araç Tekniği (Motor)",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"11"))
+        diagnosticArray.append(Diagnostic(name: "İlk Yardım",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"11"))
+        diagnosticArray.append(Diagnostic(name: "Trafik Adabı",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"11"))
+        diagnosticArray.append(Diagnostic(name: "Direksiyon Eğitimi",Cname:"Bu alan internet kullanır.",image:"1", Dimg:"11"))
         
         currentDiagnoticArray = diagnosticArray
         
