@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FAI-WN-JdM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--KISA NOTLAR-->
+        <scene sceneID="i2b-i8-kE6">
+            <objects>
+                <viewController storyboardIdentifier="Kısa Notlar" id="FAI-WN-JdM" customClass="KisaNotlar" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M2Q-gH-pcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cq1-gZ-Fpl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="AJc-sB-RBN" customClass="KisaNotlarCell" customModule="Ehliyet_2017" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AJc-sB-RBN" id="5Rv-Zm-Yxx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="desen" translatesAutoresizingMaskIntoConstraints="NO" id="cGa-0f-h7g">
+                                                    <rect key="frame" x="5" y="0.0" width="50" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5a-pT-DIp">
+                                                    <rect key="frame" x="62" y="5" width="270" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Soru Sayısı : 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-rJ-e3E">
+                                                    <rect key="frame" x="62" y="29" width="270" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="bqi-At-Khq">
+                                                    <rect key="frame" x="350" y="17" width="20" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Cname" destination="mKh-rJ-e3E" id="VBr-HG-myi"/>
+                                            <outlet property="imageDesen" destination="cGa-0f-h7g" id="Yd2-0e-xWf"/>
+                                            <outlet property="imgNext" destination="bqi-At-Khq" id="DDj-fb-rWi"/>
+                                            <outlet property="name" destination="z5a-pT-DIp" id="SFN-3L-yFV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FAI-WN-JdM" id="YG0-Eb-v0l"/>
+                                    <outlet property="delegate" destination="FAI-WN-JdM" id="C8o-Ck-uvh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cq1-gZ-Fpl" firstAttribute="top" secondItem="loq-0J-pst" secondAttribute="top" id="0cI-pr-9Cc"/>
+                            <constraint firstItem="cq1-gZ-Fpl" firstAttribute="trailing" secondItem="loq-0J-pst" secondAttribute="trailing" id="7qr-9p-51k"/>
+                            <constraint firstItem="cq1-gZ-Fpl" firstAttribute="leading" secondItem="loq-0J-pst" secondAttribute="leading" id="fVa-du-2IP"/>
+                            <constraint firstItem="cq1-gZ-Fpl" firstAttribute="bottom" secondItem="loq-0J-pst" secondAttribute="bottom" id="uCx-ZD-awI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="loq-0J-pst"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KISA NOTLAR" id="750-24-VUr">
+                        <barButtonItem key="backBarButtonItem" title="GERİ" id="SNT-CC-Ls2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="hukukTable" destination="cq1-gZ-Fpl" id="KK2-3q-NbO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfS-z5-cTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="-607"/>
+        </scene>
+        <!--Ilkyardim-->
+        <scene sceneID="337-x0-qrW">
+            <objects>
+                <viewController storyboardIdentifier="İlkyardım Bilgisi" id="kRV-mX-JdZ" customClass="ilkyardim" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oKo-Qh-QL8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwG-3C-YIK">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WwG-3C-YIK" firstAttribute="top" secondItem="4o3-f0-OeZ" secondAttribute="top" id="1mh-H4-Tf4"/>
+                            <constraint firstItem="WwG-3C-YIK" firstAttribute="bottom" secondItem="4o3-f0-OeZ" secondAttribute="bottom" id="ICZ-th-Sj6"/>
+                            <constraint firstItem="WwG-3C-YIK" firstAttribute="trailing" secondItem="4o3-f0-OeZ" secondAttribute="trailing" id="SuZ-FY-m9U"/>
+                            <constraint firstItem="WwG-3C-YIK" firstAttribute="leading" secondItem="4o3-f0-OeZ" secondAttribute="leading" id="yJu-Sm-Zcb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4o3-f0-OeZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="WebWiew" destination="WwG-3C-YIK" id="Sco-RJ-mg2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1yn-na-nOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2288.8000000000002" y="-607.38916256157643"/>
+        </scene>
+        <!--Motor-->
+        <scene sceneID="YaX-a2-r30">
+            <objects>
+                <viewController storyboardIdentifier="Motor Bilgisi" id="aNh-UZ-biV" customClass="motor" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MaP-e4-QYq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xbl-R7-0Gl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xbl-R7-0Gl" firstAttribute="bottom" secondItem="LHe-yM-CGj" secondAttribute="bottom" id="Hk6-LJ-JX1"/>
+                            <constraint firstItem="Xbl-R7-0Gl" firstAttribute="top" secondItem="LHe-yM-CGj" secondAttribute="top" id="SLf-5S-4jd"/>
+                            <constraint firstItem="Xbl-R7-0Gl" firstAttribute="trailing" secondItem="LHe-yM-CGj" secondAttribute="trailing" id="dGI-AU-Ux2"/>
+                            <constraint firstItem="Xbl-R7-0Gl" firstAttribute="leading" secondItem="LHe-yM-CGj" secondAttribute="leading" id="jek-Z9-4VA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LHe-yM-CGj"/>
+                    </view>
+                    <connections>
+                        <outlet property="WebWiew" destination="Xbl-R7-0Gl" id="YMx-TK-OGQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMl-Sq-XvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2953" y="-607"/>
+        </scene>
+        <!--Trafik-->
+        <scene sceneID="4Pz-Ee-Lbi">
+            <objects>
+                <viewController storyboardIdentifier="Trafik ve Çevre Bilgisi" id="rYO-w4-vr8" customClass="trafik" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jqb-px-ymU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="suo-eQ-dIL">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="suo-eQ-dIL" firstAttribute="leading" secondItem="Gnp-IJ-amf" secondAttribute="leading" id="akc-Dz-M1h"/>
+                            <constraint firstItem="suo-eQ-dIL" firstAttribute="top" secondItem="Gnp-IJ-amf" secondAttribute="top" id="cTD-5C-dKb"/>
+                            <constraint firstItem="suo-eQ-dIL" firstAttribute="bottom" secondItem="Gnp-IJ-amf" secondAttribute="bottom" id="dz7-ln-TRs"/>
+                            <constraint firstItem="suo-eQ-dIL" firstAttribute="trailing" secondItem="Gnp-IJ-amf" secondAttribute="trailing" id="xLP-pG-c1P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gnp-IJ-amf"/>
+                    </view>
+                    <connections>
+                        <outlet property="WebWiew" destination="suo-eQ-dIL" id="F2z-BX-fa3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GqH-1g-efF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3657" y="-607"/>
+        </scene>
+        <!--Sinav Hakkinda-->
+        <scene sceneID="CEE-ae-eO7">
+            <objects>
+                <viewController storyboardIdentifier="Sınav Hakkında" id="juH-nb-frx" customClass="SinavHakkinda" customModule="Ehliyet_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UNu-Do-S8H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UrP-LR-nCh">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UrP-LR-nCh" firstAttribute="bottom" secondItem="EEA-VM-WEV" secondAttribute="bottom" id="ECh-6W-5qT"/>
+                            <constraint firstItem="UrP-LR-nCh" firstAttribute="leading" secondItem="EEA-VM-WEV" secondAttribute="leading" id="Nqo-WZ-lYh"/>
+                            <constraint firstItem="UrP-LR-nCh" firstAttribute="trailing" secondItem="EEA-VM-WEV" secondAttribute="trailing" id="Xfz-zm-7A3"/>
+                            <constraint firstItem="UrP-LR-nCh" firstAttribute="top" secondItem="EEA-VM-WEV" secondAttribute="top" id="jb4-pc-D38"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EEA-VM-WEV"/>
+                    </view>
+                    <connections>
+                        <outlet property="WebWiew" destination="UrP-LR-nCh" id="52k-y0-9pb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kc-Es-f8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4310" y="-607"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="25" height="59"/>
+        <image name="desen" width="298" height="285"/>
+    </resources>
+</document>
